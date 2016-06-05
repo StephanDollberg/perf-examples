@@ -7,7 +7,7 @@ double foo(double x) {
 	}
 
 	return x;
-} 
+}
 
 double bar(double x) {
 	for (int64_t i = 1; i < 50000000; i++) {
@@ -15,7 +15,7 @@ double bar(double x) {
 	}
 
 	return x;
-} 
+}
 
 double master(double x) {
 	return foo(x) + bar(x);
