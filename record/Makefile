@@ -1,5 +1,5 @@
 call_graph: call_graph.cpp
-	g++ -O3 -std=c++11 -g -fno-omit-frame-pointer -fno-inline -o $@ $< 
+	g++ -O3 -std=c++11 -Wall -Wextra -pedantic -g -fno-omit-frame-pointer -fno-inline -o $@ $<
 
 call_graph_record: call_graph
 	sudo perf record -g ./$<
